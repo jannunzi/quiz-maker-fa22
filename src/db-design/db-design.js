@@ -8,8 +8,16 @@ const DatabaseDesign = () => {
             
             <h3>Mongo</h3>
             <div>
-                <Link to="/db-design/mongodb/mongo/mongo-find-all"
-                      className="list-group-item">
+                <Link to="/db-design/mongodb/mongo/mongo-find-by-multiple-fields" className="list-group-item">
+                    Mongo Find By Multiple Fields
+                </Link>
+                <Link to="/db-design/mongodb/mongo/mongo-find-by-field" className="list-group-item">
+                    Mongo Find By Field
+                </Link>
+                <Link to="/db-design/mongodb/mongo/mongo-find-by-id" className="list-group-item">
+                    Mongo Find By Id
+                </Link>
+                <Link to="/db-design/mongodb/mongo/mongo-find-all" className="list-group-item">
                     Mongo Find All
                 </Link>
             </div>

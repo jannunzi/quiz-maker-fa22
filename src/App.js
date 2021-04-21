@@ -37,6 +37,9 @@ import ReactFunctionReturn from "./web-dev/react/function/return/return";
 import Add from "./web-dev/routing/add";
 import Subtract from "./web-dev/routing/subtract";
 import {MongoFindAll} from "./db-design/mongodb/mongo/mongo-find-all";
+import {MongoFindById} from "./db-design/mongodb/mongo/mongo-find-by-id";
+import {MongoFindByField} from "./db-design/mongodb/mongo/mongo-find-by-field";
+import {MongoFindByMultipleFields} from "./db-design/mongodb/mongo/mongo-find-by-multiple-fields";
 
 function App() {
     return (
@@ -63,6 +66,12 @@ function App() {
 
                         <Route path="/db-design" exact component={DatabaseDesign}/>
                         <>
+                            <Route path="/db-design/mongodb/mongo/mongo-find-by-multiple-fields"
+                                   exact component={MongoFindByMultipleFields}/>
+                            <Route path="/db-design/mongodb/mongo/mongo-find-by-field"
+                                   exact component={MongoFindByField}/>
+                            <Route path="/db-design/mongodb/mongo/mongo-find-by-id"
+                                   exact component={MongoFindById}/>
                             <Route path="/db-design/mongodb/mongo/mongo-find-all"
                                    exact component={MongoFindAll}/>
                         </>

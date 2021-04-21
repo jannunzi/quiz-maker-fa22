@@ -2,83 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c49f9cd9-2d4b-4278-a82f-eda3bd14dd96" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/counter/react-state/counter-display.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/counter/react-state/counter-react-state.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/counter/react-state/down-component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/counter/react-state/up-component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/counter/redux-state/counter-display.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/counter/redux-state/counter-down.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/counter/redux-state/counter-redux.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/counter/redux-state/counter-up.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/db-design.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/group-by/single-table/multiple-choice/group-by-single-table-multiple-choice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/group-by/two-tables/multiple-choice/group-by-two-tables-multiple-count-choice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/group-by/two-tables/multiple-choice/group-by-two-tables-multiple-min-max-choice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/group-by/uml-group-by-multiple-choice-sum.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/group-by/uml-group-by-multiple-choice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/inline-views/true-false/inline-view-legal-true-false.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/insert/insert-into-columns.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/insert/insert-into-select.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/insert/insert-into-values.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/mongo-find-all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/normalization/first-normal-form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/normalization/second-normal-form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/normalization/third-normal-form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/query/join/fill-blanks/query-group-by-count-fill-blanks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/query/join/fill-blanks/query-join-fill-blanks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/query/join/fill-blanks/query-join-multiple-choice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/relational-algebra/symbol.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/relational-algebra/text.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/sql/create-table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/sql/insert-random-rows.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/tables/table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/uml/text-to-uml.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/utils/association-horizontal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/utils/class-diagram-horizontal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/utils/clazz.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/utils/diamond-shape.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/utils/fk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/utils/pk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sql/sql.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/css/color-and-bg-color.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/css/color-and-bg-color.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/es6/arrow/arrow-return.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/es6/filter/filter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/es6/map/map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/es6/map/map1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/es6/spreader/spreader-array.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/es6/spreader/spreader-object.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/html/checkbox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/html/labels-and-radios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/html/labels.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/html/placeholder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/html/radio.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/html/textarea.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/html/title.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/html/value.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/react/class/props.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/react/function/return/return.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/react/state/class/state-class-prev-state.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/react/state/class/state1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/react/state/function/use-state/t.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/react/state/redux/counter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/react/state/redux/state-redux.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/routing/add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/routing/nav1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/routing/routing-navigation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/routing/subtract.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/web-dev.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web-dev/widget-list/widget-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/mongo-find-by-field.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/mongo-find-by-id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/mongo-find-by-multiple-fields.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db-design/db-design.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db-design/db-design.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db-design/mongodb/mongo/mongo-find-all.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/mongo-find-all.js" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,8 +37,14 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -121,11 +59,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jannu\Documents\me\quiz-maker\src\db-design\mongodb\mongo" />
       <recent name="$PROJECT_DIR$/src/db-design/mongodb/mongo" />
       <recent name="$PROJECT_DIR$/src/web-dev/routing" />
       <recent name="$PROJECT_DIR$/src/web-dev/css" />
       <recent name="$PROJECT_DIR$/src/web-dev/html" />
-      <recent name="$PROJECT_DIR$/src/web-dev/react/function/return" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/web-dev/es6/spreader" />
@@ -134,18 +72,6 @@
       <recent name="$PROJECT_DIR$/src/counter/react-state" />
       <recent name="$PROJECT_DIR$/src/db-design/insert" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
@@ -156,6 +82,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -187,23 +114,23 @@
       <workItem from="1615609945192" duration="6000" />
       <workItem from="1615610439832" duration="7000" />
       <workItem from="1618965993742" duration="1687000" />
+      <workItem from="1618969975623" duration="3860000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

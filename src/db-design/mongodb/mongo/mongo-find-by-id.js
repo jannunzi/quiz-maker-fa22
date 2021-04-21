@@ -1,7 +1,7 @@
 import React from 'react'
 import {randomArrayElement, randomSet, jsDataTypes} from "../../../utils/utils";
 
-export const MongoFindAll = () => {
+export const MongoFindById = () => {
     const identifiers = randomSet(10, null, false);
     const types = randomSet(3, jsDataTypes, false)
     const collection = identifiers[0];
@@ -13,7 +13,7 @@ export const MongoFindAll = () => {
     const type3 = types[2];
     return(
         <div>
-            <h1>Mongo Find All</h1>
+            <h1>Mongo Find By Id</h1>
             <div id="question123">
                 Consider the following schema
                 <br/>
@@ -21,22 +21,24 @@ export const MongoFindAll = () => {
                 {collection}({field1}: {type1}, {field2}: {type2}, {field3}: {type3})
                 <br/>
                 <br/>
-                Which of the following options retrieves all the documents?
+                Which of the following options retrieves a document by its primary key?
                 <br/>
             </div>
             <div id="answers234">
                 <hr/>
-                <b>db.{collection}.find()</b>
+                <input size={50} value={`db.${collection}.find({_id: ObjectId("ABC")})`}/>
                 <hr/>
-                db.findAll({collection})
+                <input size={50} value={`${collection}.db.find({_id: ObjectId("ABC")})`}/>
                 <hr/>
-                db.{collection}.findAll()
+                <input size={50} value={`db.${collection}.find({${field1}: "ABC"})`}/>
                 <hr/>
-                db.find({collection})
+                <input size={50} value={`db.${collection}.findById("ABC")`}/>
                 <hr/>
-                db.{collection}()
+                <input size={50} value={`db.${collection}.findOne({_id: ObjectId("ABC")})`}/>
                 <hr/>
-                db.find.{collection}()
+                <input size={50} value={`${collection}.db.findById("ABC")`}/>
+                <hr/>
+                <input size={50} value={`${collection}.db.find("ABC")`}/>
             </div>
         </div>
     )
