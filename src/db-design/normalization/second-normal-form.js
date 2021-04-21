@@ -1,0 +1,45 @@
+import React from 'react'
+import {randomSet, work} from "../../utils/utils";
+import Pk from "../utils/pk";
+import Fk from "../utils/fk";
+
+const SecondNormalForm = () => {
+    const capitalizedStrings = randomSet(10, work, true)
+    const lowercaseStrings = randomSet(10, work)
+    
+    const courseTable = capitalizedStrings[0];//"CUSTOMERS";
+    const courseId = lowercaseStrings[0];//"cid";
+    const semester = lowercaseStrings[1];//"first_name";
+    const seats = lowercaseStrings[2];//"last_name";
+    const courseName = lowercaseStrings[3];//"courseName";    
+    
+    return(
+        <div>
+            <h1>Second Normal Form</h1>
+            <div id="question123">
+                Consider the following schema with
+                composite primary key {'{'}{courseId}, {semester}{'}'}
+                <br/>
+                and a dependency between fields {courseName} and {courseId}
+                <br/>
+                <br/>
+                {courseTable}({'{'}{courseId}, {semester}{'}'}, {seats}, {courseName})
+                <br/>
+                <br/>
+                Which normalization is the schema violating?
+            </div>
+            <div id="answers234">
+                <hr/>
+                Second normal form
+                <hr/>
+                First normal form
+                <hr/>
+                Third normal form
+                <hr/>
+                The schema does not violate any normal form
+            </div>
+        </div>
+    )
+}
+
+export default SecondNormalForm
