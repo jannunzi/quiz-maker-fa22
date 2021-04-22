@@ -8,6 +8,12 @@ const DatabaseDesign = () => {
             
             <h3>Mongo</h3>
             <div>
+                <Link to="/db-design/mongodb/mongo/mongo-find-$eq" className="list-group-item">
+                    Mongo Find $Eq
+                </Link>
+                <Link to="/db-design/mongodb/mongo/mongo-find-and" className="list-group-item">
+                    Mongo Find And
+                </Link>
                 <Link to="/db-design/mongodb/mongo/mongo-find-by-multiple-fields" className="list-group-item">
                     Mongo Find By Multiple Fields
                 </Link>
