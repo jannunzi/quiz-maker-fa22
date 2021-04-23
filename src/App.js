@@ -36,12 +36,15 @@ import ReactClassProps from "./web-dev/react/class/props";
 import ReactFunctionReturn from "./web-dev/react/function/return/return";
 import Add from "./web-dev/routing/add";
 import Subtract from "./web-dev/routing/subtract";
-import {MongoFindAll} from "./db-design/mongodb/mongo/mongo-find-all";
-import {MongoFindById} from "./db-design/mongodb/mongo/mongo-find-by-id";
-import {MongoFindByField} from "./db-design/mongodb/mongo/mongo-find-by-field";
-import {MongoFindByMultipleFields} from "./db-design/mongodb/mongo/mongo-find-by-multiple-fields";
-import {MongoFindAnd} from "./db-design/mongodb/mongo/mongo-find-and";
-import {MongoFind$Eq} from "./db-design/mongodb/mongo/mongo-find-$eq";
+import {MongoFindAll} from "./db-design/mongodb/mongo/find/mongo-find-all";
+import {MongoFindById} from "./db-design/mongodb/mongo/find/mongo-find-by-id";
+import {MongoFindByField} from "./db-design/mongodb/mongo/find/mongo-find-by-field";
+import {MongoFindByMultipleFields} from "./db-design/mongodb/mongo/find/mongo-find-by-multiple-fields";
+import {MongoFindAnd} from "./db-design/mongodb/mongo/find/mongo-find-and";
+import {MongoFind$Eq} from "./db-design/mongodb/mongo/find/mongo-find-$eq";
+import {MongoFind$Gt} from "./db-design/mongodb/mongo/find/mongo-find-$gt";
+import {MongoProjectIncludeOne} from "./db-design/mongodb/mongo/project/mongo-project-include-one";
+import {MongoProjectIncludeSeveral} from "./db-design/mongodb/mongo/project/mongo-project-include-several";
 
 function App() {
     return (
@@ -68,6 +71,14 @@ function App() {
 
                         <Route path="/db-design" exact component={DatabaseDesign}/>
                         <>
+                            <Route path="/db-design/mongodb/mongo/project/mongo-project-include-several"
+                                   exact component={MongoProjectIncludeSeveral}/>
+                            <Route path="/db-design/mongodb/mongo/project/mongo-project-only-one"
+                                   exact component={MongoProjectIncludeOne}/>
+                        </>
+                        <>
+                            <Route path="/db-design/mongodb/mongo/mongo-find-$gt"
+                                   exact component={MongoFind$Gt}/>
                             <Route path="/db-design/mongodb/mongo/mongo-find-$eq"
                                    exact component={MongoFind$Eq}/>
                             <Route path="/db-design/mongodb/mongo/mongo-find-and"

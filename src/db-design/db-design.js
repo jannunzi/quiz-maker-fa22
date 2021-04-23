@@ -5,9 +5,24 @@ const DatabaseDesign = () => {
     return (
         <>
             <h2>Database Design</h2>
-            
-            <h3>Mongo</h3>
+            <h3>Mongo Projection</h3>
             <div>
+                <Link to="/db-design/mongodb/mongo/project/mongo-project-include-only-one" className="list-group-item">
+                    Mongo Project Include Only One
+                </Link>
+                <Link to="/db-design/mongodb/mongo/project/mongo-project-include-several" className="list-group-item">
+                    Mongo Project Include Several Fields
+                </Link>
+                <Link to="/db-design/mongodb/mongo/project/mongo-project-only-one" className="list-group-item">
+                    Mongo Project One
+                </Link>
+            </div>
+            
+            <h3>Mongo Find</h3>
+            <div>
+                <Link to="/db-design/mongodb/mongo/mongo-find-$gt" className="list-group-item">
+                    Mongo Find $Gt
+                </Link>
                 <Link to="/db-design/mongodb/mongo/mongo-find-$eq" className="list-group-item">
                     Mongo Find $Eq
                 </Link>

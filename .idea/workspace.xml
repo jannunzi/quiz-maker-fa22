@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c49f9cd9-2d4b-4278-a82f-eda3bd14dd96" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/mongo-find-$eq.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/mongo-find-and.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/find/mongo-find-$gt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/project/mongo-project-include-one.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/project/mongo-project-include-only-one.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/project/mongo-project-include-several.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/db-design/db-design.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db-design/db-design.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db-design/mongodb/mongo/mongo-find-$eq.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/find/mongo-find-$eq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db-design/mongodb/mongo/mongo-find-all.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/find/mongo-find-all.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db-design/mongodb/mongo/mongo-find-and.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/find/mongo-find-and.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db-design/mongodb/mongo/mongo-find-by-field.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/find/mongo-find-by-field.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db-design/mongodb/mongo/mongo-find-by-id.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/find/mongo-find-by-id.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db-design/mongodb/mongo/mongo-find-by-multiple-fields.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/find/mongo-find-by-multiple-fields.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +54,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/db-design/mongodb/mongo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/db-design/mongodb/mongo/project" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
@@ -57,18 +65,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/db-design/mongodb/mongo/find" />
       <recent name="$PROJECT_DIR$/src/web-dev/es6/spreader" />
       <recent name="$PROJECT_DIR$/src/web-dev/react/state/function" />
       <recent name="$PROJECT_DIR$/src/counter/dfasdfd" />
       <recent name="$PROJECT_DIR$/src/counter/react-state" />
-      <recent name="$PROJECT_DIR$/src/db-design/insert" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/db-design/mongodb/mongo/project" />
+      <recent name="$PROJECT_DIR$/src/db-design/mongodb/mongo/projection" />
       <recent name="$PROJECT_DIR$/src/db-design/mongodb/mongo" />
       <recent name="C:\Users\jannu\Documents\me\quiz-maker\src\db-design\mongodb\mongo" />
       <recent name="$PROJECT_DIR$/src/web-dev/routing" />
-      <recent name="$PROJECT_DIR$/src/web-dev/css" />
-      <recent name="$PROJECT_DIR$/src/web-dev/html" />
     </key>
   </component>
   <component name="RunDashboard">

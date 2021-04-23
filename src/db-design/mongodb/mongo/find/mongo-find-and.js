@@ -1,7 +1,7 @@
 import React from 'react'
-import {randomSet, jsDataTypes} from "../../../utils/utils";
+import {randomSet, jsDataTypes} from "../../../../utils/utils";
 
-export const MongoFind$Eq = () => {
+export const MongoFindAnd = () => {
     const identifiers = randomSet(10, null, false);
     const types = randomSet(3, jsDataTypes, false)
     const collection = identifiers[0];
@@ -11,11 +11,11 @@ export const MongoFind$Eq = () => {
     const value1 = identifiers[4];
     const value2 = Math.round(Math.random() * 100);
     const type1 = "string";
-    const type2 = types[1];
+    const type2 = "number";
     const type3 = types[2];
     return(
         <div>
-            <h1>Mongo Find $Eq</h1>
+            <h1>Mongo Find And</h1>
             <div id="question123">
                 Consider the following schema
                 <br/>
@@ -25,21 +25,22 @@ export const MongoFind$Eq = () => {
                 <br/>
                 Which of the following options retrieves documents
                 whose field <b>{field1}</b> is equal to <b>"{value1}"</b>
+                and field <b>{field2}</b> is equal to <b>{value2}</b>
                 <br/>
             </div>
             <div id="answers234">
                 <hr/>
 <input size={70}
-       value={`db.${collection}.find({${field1}: {$eq: "${value1}"}})`}/>
-                <hr/>
+       value={`db.${collection}.find({$and: [{${field1}: "${value1}"}, {${field2}: ${value2}}]})`}/>
+<hr/>
 <input size={70}
-       value={`db.${collection}.find("${field1} $eq '${value1}'")`}/>
-                <hr/>
+       value={`db.${collection}.find([{${field1}: "${value1}"}, {${field2}: ${value2}}])`}/>
+<hr/>
 <input size={70}
-       value={`db.${collection}.find({$eq: {${field1}: "${value1}"}})`}/>
-                <hr/>
+       value={`db.${collection}.find({$and: {${field1}: "${value1}"${field2}: ${value2}}})`}/>
+<hr/>
 <input size={70}
-       value={`db.${collection}.findEqual({${field1}: "${value1}"})`}/>
+       value={`db.${collection}.find([$and: {{${field1}: "${value1}"}, {${field2}: ${value2}}}])`}/>
                 <hr/>
             </div>
         </div>

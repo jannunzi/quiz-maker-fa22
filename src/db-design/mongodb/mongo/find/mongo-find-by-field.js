@@ -1,5 +1,5 @@
 import React from 'react'
-import {randomArrayElement, randomSet, jsDataTypes} from "../../../utils/utils";
+import {randomArrayElement, randomSet, jsDataTypes} from "../../../../utils/utils";
 
 export const MongoFindByField = () => {
     const identifiers = randomSet(10, null, false);

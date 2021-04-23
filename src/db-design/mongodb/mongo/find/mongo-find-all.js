@@ -1,7 +1,7 @@
 import React from 'react'
-import {randomArrayElement, randomSet, jsDataTypes} from "../../../utils/utils";
+import {randomArrayElement, randomSet, jsDataTypes} from "../../../../utils/utils";
 
-export const MongoFindById = () => {
+export const MongoFindAll = () => {
     const identifiers = randomSet(10, null, false);
     const types = randomSet(3, jsDataTypes, false)
     const collection = identifiers[0];
@@ -13,7 +13,7 @@ export const MongoFindById = () => {
     const type3 = types[2];
     return(
         <div>
-            <h1>Mongo Find By Id</h1>
+            <h1>Mongo Find All</h1>
             <div id="question123">
                 Consider the following schema
                 <br/>
@@ -21,24 +21,22 @@ export const MongoFindById = () => {
                 {collection}({field1}: {type1}, {field2}: {type2}, {field3}: {type3})
                 <br/>
                 <br/>
-                Which of the following options retrieves a document by its primary key?
+                Which of the following options retrieves all the documents?
                 <br/>
             </div>
             <div id="answers234">
                 <hr/>
-                <input size={50} value={`db.${collection}.find({_id: ObjectId("ABC")})`}/>
+                <b>db.{collection}.find()</b>
                 <hr/>
-                <input size={50} value={`${collection}.db.find({_id: ObjectId("ABC")})`}/>
+                db.findAll({collection})
                 <hr/>
-                <input size={50} value={`db.${collection}.find({${field1}: "ABC"})`}/>
+                db.{collection}.findAll()
                 <hr/>
-                <input size={50} value={`db.${collection}.findById("ABC")`}/>
+                db.find({collection})
                 <hr/>
-                <input size={50} value={`db.${collection}.findOne({_id: ObjectId("ABC")})`}/>
+                db.{collection}()
                 <hr/>
-                <input size={50} value={`${collection}.db.findById("ABC")`}/>
-                <hr/>
-                <input size={50} value={`${collection}.db.find("ABC")`}/>
+                db.find.{collection}()
             </div>
         </div>
     )
