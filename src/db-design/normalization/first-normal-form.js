@@ -15,7 +15,7 @@ const FirstNormalForm = () => {
     const lastName = lowercaseStrings[2];//"last_name";
     const telephone = lowercaseStrings[3];//"telephone";    
     
-    const telephoneTable = capitalizedStrings[1];//"TELEPHONES"
+    const telephoneTable = telephone.toUpperCase();//capitalizedStrings[1];//"TELEPHONES"
     
     return(
         <div>
@@ -24,14 +24,14 @@ const FirstNormalForm = () => {
                 Consider the following schema
                 <br/>
                 <br/>
-                {customersTable}(<Pk name={customerId}/>, {firstName}, {lastName}, {telephone})
+                <b>{customersTable}(<Pk name={customerId}/>, {firstName}, {lastName}, {telephone})</b>
                 <br/>
                 <br/>
                 If each record in {customersTable} can have multiple
                 <br/>
-                values for {telephone}s, which of the following alternatives
+                values for <b>{telephone}s</b>, which of the following alternatives
                 <br/>
-                would not break first normal form?
+                conforms to <b>First Normal</b> form?
             </div>
             <div id="answers234">
                 <hr/>

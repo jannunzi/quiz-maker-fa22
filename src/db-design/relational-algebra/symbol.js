@@ -27,9 +27,11 @@ const RelationalAlgebraSymbol = () => {
                 Consider the following schema:
                 <br/>
                 <br/>
+                <b>
                 {student}({sid}, {name}, {grad_year}, {did})
                 <br/>
                 {department}({did}, {name})
+                </b>
                 <br/>
                 <br/>
                 What does the following expression mean?
@@ -50,19 +52,19 @@ const RelationalAlgebraSymbol = () => {
                 <br/>
                 <br/>
 
-                Retrieve {student}'s {name}s of {student}s related to {did}={did10} and {grad_year} is {year}
+                Retrieve {student}'s {name}s from records in {student}s related to {did}={did10} and {grad_year} is {year}
                 <br/>
                 <br/>
 
-                Retrieve {student}'s {name}s of {student}s related to {did}={did10} or {grad_year} is {year}
+                Retrieve {student}'s {name}s from records in {student}s related to {did}={did10} or {grad_year} is {year}
                 <br/>
                 <br/>
 
-                Retrieve {department}'s {name}s for {student}s related to {did}={did10} and {grad_year} is {year}
+                Retrieve {department}'s {name}s from records in {student}s related to {did}={did10} and {grad_year} is {year}
                 <br/>
                 <br/>
 
-                Retrieve {department}'s {name}s for {student}s related to {did}={did10} or {grad_year} is {year}
+                Retrieve {department}'s {name}s from records in {student}s related to {did}={did10} or {grad_year} is {year}
                 
                 
             </div>

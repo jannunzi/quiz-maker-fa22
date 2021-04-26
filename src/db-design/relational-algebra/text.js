@@ -27,15 +27,19 @@ const RelationalAlgebraText = () => {
                 Consider the following schema:
                 <br/>
                 <br/>
+                <b>
                 {student}({sid}, {name}, {grad_year}, {did})
                 <br/>
                 {department}({did}, {name})
+                </b>
                 <br/>
                 <br/>
                 What does the following expression mean?
                 <br/>
                 <br/>
+                <b>
                 SELECT(PROJECT({student}, {name}), {did}={did10})
+                </b>
             </div>
             
             <div id="answers333">

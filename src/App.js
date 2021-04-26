@@ -45,6 +45,21 @@ import {MongoFind$Eq} from "./db-design/mongodb/mongo/find/mongo-find-$eq";
 import {MongoFind$Gt} from "./db-design/mongodb/mongo/find/mongo-find-$gt";
 import {MongoProjectIncludeOne} from "./db-design/mongodb/mongo/project/mongo-project-include-one";
 import {MongoProjectIncludeSeveral} from "./db-design/mongodb/mongo/project/mongo-project-include-several";
+import {MongoProjectExcludeId} from "./db-design/mongodb/mongo/project/mongo-project-exclude-id";
+import {MongoInsert} from "./db-design/mongodb/mongo/insert/mongo-insert";
+import {MongoUpdate} from "./db-design/mongodb/mongo/update/mongo-update";
+import {MongoReplace} from "./db-design/mongodb/mongo/update/mongo-replace";
+import {MongoRemove} from "./db-design/mongodb/mongo/remove/mongo-remove";
+import {MongooseSchemaNumber} from "./db-design/mongodb/mongoose/schema/mongoose-schema-number";
+import {MongooseSchemaCollection} from "./db-design/mongodb/mongoose/schema/mongoose-schema-collection";
+import {MongooseSchemaModel} from "./db-design/mongodb/mongoose/schema/mongoose-schema-model";
+import {MongooseModelFind} from "./db-design/mongodb/mongoose/model/mongoose-model-find";
+import {MongooseModelFindById} from "./db-design/mongodb/mongoose/model/mongoose-model-find-by-id";
+import {MongooseModelFindOne} from "./db-design/mongodb/mongoose/model/mongoose-model-find-one";
+import {IndexingCreateSingleNonUniqueIndex} from "./db-design/indexing/indexing-create-single-non-unique-index";
+import {IndexingCreateCompositeIndex} from "./db-design/indexing/indexing-create-composit-index";
+import {TransactionsDirtyRead} from "./db-design/transactions/transactions-dirty-reads";
+import {TransactionsNonRepeatableRead} from "./db-design/transactions/transactions-non-repeatable-read";
 
 function App() {
     return (
@@ -68,9 +83,52 @@ function App() {
                         </Route>
 
 
-
                         <Route path="/db-design" exact component={DatabaseDesign}/>
                         <>
+                            <Route path="/db-design/transactions/transactions-non-repeatable-reads"
+                                   exact component={TransactionsNonRepeatableRead}/>
+                            <Route path="/db-design/transactions/transactions-dirty-reads"
+                                   exact component={TransactionsDirtyRead}/>
+                        </>
+                        <>
+                            <Route path="/db-design/indexing/indexing-create-composite"
+                                   exact component={IndexingCreateCompositeIndex}/>
+                            <Route path="/db-design/indexing/indexing-create-single-non-unique"
+                                   exact component={IndexingCreateSingleNonUniqueIndex}/>
+                        </>
+                        <>
+                            <Route path="/db-design/mongodb/mongoose/model/mongoose-model-find-one"
+                                   exact component={MongooseModelFindOne}/>
+                            <Route path="/db-design/mongodb/mongoose/model/mongoose-model-find-by-id"
+                                   exact component={MongooseModelFindById}/>
+                            <Route path="/db-design/mongodb/mongoose/model/mongoose-model-find"
+                                   exact component={MongooseModelFind}/>
+                        </>
+                        <>
+                            <Route path="/db-design/mongodb/mongoose/schema/mongoose-schema-model"
+                                   exact component={MongooseSchemaModel}/>
+                            <Route path="/db-design/mongodb/mongoose/schema/mongoose-schema-collection"
+                                   exact component={MongooseSchemaCollection}/>
+                            <Route path="/db-design/mongodb/mongoose/schema/mongoose-schema-number"
+                                   exact component={MongooseSchemaNumber}/>
+                        </>
+                        <>
+                            <Route path="/db-design/mongodb/mongo/remove/mongo-remove"
+                                   exact component={MongoRemove}/>
+                        </>
+                        <>
+                            <Route path="/db-design/mongodb/mongo/update/mongo-replace"
+                                   exact component={MongoReplace}/>
+                            <Route path="/db-design/mongodb/mongo/update/mongo-update"
+                                   exact component={MongoUpdate}/>
+                        </>
+                        <>
+                            <Route path="/db-design/mongodb/mongo/insert/mongo-insert"
+                                   exact component={MongoInsert}/>
+                        </>
+                        <>
+                            <Route path="/db-design/mongodb/mongo/project/mongo-project-exclude-id"
+                                   exact component={MongoProjectExcludeId}/>
                             <Route path="/db-design/mongodb/mongo/project/mongo-project-include-several"
                                    exact component={MongoProjectIncludeSeveral}/>
                             <Route path="/db-design/mongodb/mongo/project/mongo-project-only-one"

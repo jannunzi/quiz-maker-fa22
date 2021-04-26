@@ -5,8 +5,78 @@ const DatabaseDesign = () => {
     return (
         <>
             <h2>Database Design</h2>
+            <h3>Transactions</h3>
+            <div>
+                <Link to="/db-design/transactions/transactions-non-repeatable-reads" className="list-group-item">
+                    Transactions Non Repeatable Read
+                </Link>
+                <Link to="/db-design/transactions/transactions-dirty-reads" className="list-group-item">
+                    Transactions Dirty Read
+                </Link>
+            </div>
+            <h3>Indexing</h3>
+            <div>
+                <Link to="/db-design/indexing/indexing-create-composite" className="list-group-item">
+                    Indexing Create Composit Index
+                </Link>
+                <Link to="/db-design/indexing/indexing-create-single-non-unique" className="list-group-item">
+                    Indexing Create Single Non Unique Index
+                </Link>
+            </div>
+            <h3>Mongoose Model</h3>
+            <div>
+                <Link to="/db-design/mongodb/mongoose/model/mongoose-model-find-one" className="list-group-item">
+                    Mongo Model Find One
+                </Link>
+                <Link to="/db-design/mongodb/mongoose/model/mongoose-model-find-by-id" className="list-group-item">
+                    Mongo Model Find By Id
+                </Link>
+                <Link to="/db-design/mongodb/mongoose/model/mongoose-model-find" className="list-group-item">
+                    Mongo Model Find
+                </Link>
+            </div>
+            <h3>Mongoose Schema</h3>
+            <div>
+                <Link to="/db-design/mongodb/mongoose/schema/mongoose-schema-model" className="list-group-item">
+                    Mongo Schema Model
+                </Link>
+                <Link to="/db-design/mongodb/mongoose/schema/mongoose-schema-collection" className="list-group-item">
+                    Mongo Schema Collection
+                </Link>
+            </div>
+            <div>
+                <Link to="/db-design/mongodb/mongoose/schema/mongoose-schema-number" className="list-group-item">
+                    Mongo Schema Number
+                </Link>
+            </div>
+            <h3>Mongo Remove</h3>
+            <div>
+                <Link to="/db-design/mongodb/mongo/remove/mongo-remove" className="list-group-item">
+                    Mongo Remove
+                </Link>
+            </div>
+            <h3>Mongo Update</h3>
+            <div>
+                <Link to="/db-design/mongodb/mongo/update/mongo-replace" className="list-group-item">
+                    Mongo Replace
+                </Link>
+            </div>
+            <div>
+                <Link to="/db-design/mongodb/mongo/update/mongo-update" className="list-group-item">
+                    Mongo Update
+                </Link>
+            </div>
+            <h3>Mongo Insert</h3>
+            <div>
+                <Link to="/db-design/mongodb/mongo/insert/mongo-insert" className="list-group-item">
+                    Mongo Insert
+                </Link>
+            </div>
             <h3>Mongo Projection</h3>
             <div>
+                <Link to="/db-design/mongodb/mongo/project/mongo-project-exclude-id" className="list-group-item">
+                    Mongo Project Exclude ID
+                </Link>
                 <Link to="/db-design/mongodb/mongo/project/mongo-project-include-only-one" className="list-group-item">
                     Mongo Project Include Only One
                 </Link>
