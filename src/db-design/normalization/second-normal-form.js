@@ -18,12 +18,13 @@ const SecondNormalForm = () => {
             <h1>Second Normal Form</h1>
             <div id="question123">
                 Consider the following schema with
-                composite primary key {'{'}{courseId}, {semester}{'}'}
+                composite primary key <b>{'{'}{courseId}, {semester}{'}'}</b>
                 <br/>
-                and a dependency between fields {courseName} and {courseId}
+                and a dependency between fields <b>{courseName}</b> and <b>{courseId}</b>
+                &nbsp;but no dependency between <b>{courseName}</b> and <b>{semester}</b>
                 <br/>
                 <br/>
-                {courseTable}({'{'}{courseId}, {semester}{'}'}, {seats}, {courseName})
+                <b>{courseTable}({'{'}{courseId}, {semester}{'}'}, {seats}, {courseName})</b>
                 <br/>
                 <br/>
                 Which normalization is the schema violating?

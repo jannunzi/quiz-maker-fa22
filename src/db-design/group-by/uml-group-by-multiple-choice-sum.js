@@ -121,17 +121,17 @@ const UmlGroupByMultipleSum = () => {
                 <br/>
                 <br/>
 
-                "Which records in {reservationClass}s are related to
+                "Which records in <b>{reservationClass}</b>s are related to
                 <br/>
-                &nbsp;records in {flightClass} whose field {flightDestination} is "{NewYork}"
+                &nbsp;records in <b>{flightClass}</b> whose field <b>{flightDestination}</b> is <b>"{NewYork}"</b>
                 <br/>
                 {/*&nbsp;and which have a total cost of ${FourHundred} or more,*/}
                 {/*<br/>*/}
                 {/*&nbsp;and the total cost of a {reservationClass} is*/}
                 {/*<br/>*/}
-                &nbsp;and the SUM of the {ticketPrice}s of all the {ticketClass}s
+                &nbsp;and the <b>SUM</b> of the <b>{ticketPrice}</b>s of all the <b>{ticketClass}</b>s
                 <br/>
-                &nbsp;related to {reservationClass} is more than ${FourHundred}"
+                &nbsp;related to <b>{reservationClass}</b> is more than <b>${FourHundred}</b>"
                 <br/>
 
             </div>

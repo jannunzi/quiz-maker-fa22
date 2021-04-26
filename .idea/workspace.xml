@@ -2,20 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c49f9cd9-2d4b-4278-a82f-eda3bd14dd96" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/find/mongo-find-$gt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/project/mongo-project-include-one.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/project/mongo-project-include-only-one.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/project/mongo-project-include-several.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db-design/indexing/indexing-create-composit-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db-design/indexing/indexing-create-single-non-unique-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/insert/mongo-insert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/project/mongo-project-exclude-id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/remove/mongo-remove.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/update/mongo-replace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/update/mongo-update.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongoose/model/mongoose-model-find-by-id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongoose/model/mongoose-model-find-one.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongoose/model/mongoose-model-find.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongoose/schema/mongoose-schema-collection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongoose/schema/mongoose-schema-model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongoose/schema/mongoose-schema-number.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db-design/transactions/transactions-dirty-reads.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db-design/transactions/transactions-non-repeatable-read.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/template-fill-multiple-blanks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/template-multiple-choice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/db-design/db-design.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db-design/db-design.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db-design/mongodb/mongo/mongo-find-$eq.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/find/mongo-find-$eq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db-design/mongodb/mongo/mongo-find-all.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/find/mongo-find-all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db-design/mongodb/mongo/mongo-find-and.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/find/mongo-find-and.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db-design/mongodb/mongo/mongo-find-by-field.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/find/mongo-find-by-field.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db-design/mongodb/mongo/mongo-find-by-id.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/find/mongo-find-by-id.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db-design/mongodb/mongo/mongo-find-by-multiple-fields.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db-design/mongodb/mongo/find/mongo-find-by-multiple-fields.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db-design/group-by/uml-group-by-multiple-choice-sum.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db-design/group-by/uml-group-by-multiple-choice-sum.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db-design/normalization/first-normal-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db-design/normalization/first-normal-form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db-design/normalization/second-normal-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db-design/normalization/second-normal-form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db-design/normalization/third-normal-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db-design/normalization/third-normal-form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db-design/relational-algebra/symbol.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db-design/relational-algebra/symbol.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db-design/relational-algebra/text.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db-design/relational-algebra/text.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db-design/utils/fk.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db-design/utils/fk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db-design/utils/pk.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db-design/utils/pk.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +69,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/db-design/mongodb/mongo/project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/db-design/transactions" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
@@ -64,6 +79,13 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jannu\Documents\me\quiz-maker\src\db-design\transactions" />
+      <recent name="C:\Users\jannu\Documents\me\quiz-maker\src\db-design\indexing" />
+      <recent name="C:\Users\jannu\Documents\me\quiz-maker\src\templates" />
+      <recent name="C:\Users\jannu\Documents\me\quiz-maker\src\db-design\mongodb\mongoose\model" />
+      <recent name="C:\Users\jannu\Documents\me\quiz-maker\src\db-design\mongodb\mongoose\crud" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/db-design/mongodb/mongo/find" />
       <recent name="$PROJECT_DIR$/src/web-dev/es6/spreader" />
@@ -71,36 +93,18 @@
       <recent name="$PROJECT_DIR$/src/counter/dfasdfd" />
       <recent name="$PROJECT_DIR$/src/counter/react-state" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/db-design/mongodb/mongo/project" />
-      <recent name="$PROJECT_DIR$/src/db-design/mongodb/mongo/projection" />
-      <recent name="$PROJECT_DIR$/src/db-design/mongodb/mongo" />
-      <recent name="C:\Users\jannu\Documents\me\quiz-maker\src\db-design\mongodb\mongo" />
-      <recent name="$PROJECT_DIR$/src/web-dev/routing" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="start" />
       <node-interpreter value="project" />
+      <package-manager value="npm" />
       <envs />
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -144,12 +148,11 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
