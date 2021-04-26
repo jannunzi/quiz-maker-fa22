@@ -41,12 +41,14 @@ const StateRedux = () => {
             <br/>
             What does {`<h1>`} display when the component {counterContainerStr} first renders: {`[INITIALCOUNT_${initialCount}]`}
             <br/>
-            What does {`<h1>`} display after pressing button {incrementButton}: {`[AFTERINCREMENT_${initialCount + increment}]`}
+            What does {`<h1>`} display if you then press button {incrementButton}: {`[AFTERINCREMENT_${initialCount + increment}]`}
             <br/>
-            What does {`<h1>`} display after pressing button {decrementButton}: {`[AFTERDECREMENT_${initialCount + increment - decrement}]`}
+            What does {`<h1>`} display if you then press button {decrementButton}: {`[AFTERDECREMENT_${initialCount + increment - decrement}]`}
             <br/>
 
-            <CounterContainer/>
+            <CounterContainer
+                incrementButton={incrementButton}
+                decrementButton={decrementButton}/>
         </div>
     )
 }
@@ -136,9 +138,9 @@ const reducer = (state = {count: initialCount}, action) => {
 
 const store = createStore(reducer)
 
-const CounterContainer = () =>
+const CounterContainer = ({incrementButton, decrementButton}) =>
     <Provider store={store}>
-        <Counter/>
+        <Counter incrementButton={incrementButton} decrementButton={decrementButton}/>
     </Provider>
 
 export default StateRedux
