@@ -1,10 +1,11 @@
 import {connect} from "react-redux";
 
-const Counter = ({plus2, minus3, count}) =>
+const Counter = (
+    {plus2, minus3, count, incrementButton="dd", decrementButton}) =>
     <div>
         <h1>{count}</h1>
-        <button onClick={plus2}>PLUS 2</button>
-        <button onClick={minus3}>MINUS 3</button>
+        <button onClick={plus2}>{incrementButton}</button>
+        <button onClick={minus3}>{decrementButton}</button>
     </div>
 
 const stpm = (state) => ({count: state.count})

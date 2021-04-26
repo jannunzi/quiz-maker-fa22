@@ -40,7 +40,7 @@ const Question = (
 let ${array2} = [${array2Values}];
 let ${array3} = [...${array1}, 9, 10, 11, ${array2}]`}
             </pre>
-            How many elements does <code>{array3}</code> have: [HOWMANY_{array1Values.length + 3 + array2Values.length}]
+            What is the value of <code>{array3}.length</code>?: [HOWMANY_{array1Values.length + 3 + 1}]
         </div>
     )
 }

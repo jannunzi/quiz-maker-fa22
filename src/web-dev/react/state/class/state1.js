@@ -32,7 +32,7 @@ const State1 = () => {
             What is displayed in {`<h1>`} when you click on {D}: {'[ONE]'}
             <br/>
             What is displayed in {`<h1>`} when you click on {E}: {'[ZERO1]'}
-            <Toggle/>
+            <Toggle123 f={f} g={g} D={D} E={E}/>
         </div>
     )
 }
@@ -66,7 +66,7 @@ class ${Toggle} extends React.Component {
     )
 }
 
-class Toggle extends React.Component {
+class Toggle123 extends React.Component {
     state = {
         a: 0
     }
@@ -74,8 +74,12 @@ class Toggle extends React.Component {
         return(
             <div>
                 <h1>{this.state.a}</h1>
-                {this.state.a % 4 === 0 && <button onClick={() => this.setState((b) => ({a: ++b.a}))}>D</button>}
-                {this.state.a % 5 !== 0 && <button onClick={() => this.setState((c) => ({a: --c.a}))}>E</button>}
+                {this.state.a % this.props.f === 0 && <button onClick={() => this.setState((b) => ({a: ++b.a}))}>{this.props.D}</button>}
+                {this.state.a % this.props.g !== 0 && <button onClick={() => this.setState((c) => ({a: --c.a}))}>{this.props.E}</button>}
+                <br/>
+                {this.props.f}
+                <br/>
+                {this.props.g}
             </div>
         )
     }

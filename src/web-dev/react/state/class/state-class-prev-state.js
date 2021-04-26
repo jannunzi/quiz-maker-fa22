@@ -12,7 +12,7 @@ const StateClassPrevState = () => {
                       ewq={strings[2]} rew={strings[3]} tre={strings[4]} 
                       prevState={strings[5]}
                       A={caps[6]} B={caps[7]} C={caps[8]}/>
-            <Answer ten={ten}/>
+            <Answer ten={ten} A={caps[6]} B={caps[7]} C={caps[8]}/>
         </div>)
 }
 
@@ -54,9 +54,9 @@ class ${Answer} extends React.Component {
 
         What does {`<h1>`} render when component {Answer} first mounts? [ANSWER_{ten}]
         <br/>
-        What does {`<h1>`} render when we click button {B}? [ANSWER_{ten + 1}]
+        What does {`<h1>`} render when you then click button {B}? [ANSWER_{ten + 1}]
         <br/>
-        What does {`<h1>`} render when we click button {C}? [ANSWER_{ten + 2}]
+        What does {`<h1>`} render when you then click button {C}? [ANSWER_{ten + 2}]
         <br/>
         Which is a better implementation, function <code>{rew}</code> or function <code>{tre}</code>? [ANSWER_{tre}]
         <br/>
@@ -78,9 +78,9 @@ class Answer extends React.Component {
         return(
             <div>
                 <h1>{this.state.count}</h1>
-                <button onClick={this.ewq}>A</button>
-                <button onClick={this.rew}>B</button>
-                <button onClick={this.tre}>C</button>
+                <button onClick={this.ewq}>{this.props.A}</button>
+                <button onClick={this.rew}>{this.props.B}</button>
+                <button onClick={this.tre}>{this.props.C}</button>
             </div>
         )
     }
