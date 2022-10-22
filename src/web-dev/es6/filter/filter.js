@@ -1,21 +1,32 @@
 import React from 'react'
-import {randomIntArray} from "../../../utils/utils";
+import {
+    randomArrayOfStrings,
+    randomInt,
+    randomIntArray
+} from "../../../utils/utils";
 
 const Filter = () => {
-    const ewq = randomIntArray()
+    const range = randomIntArray();
+    const strings = randomArrayOfStrings(3);
+    const ewq = strings[0];
+    const dsa = strings[1];
+    const rew = strings[2];
+    const fifty = randomInt(75);
+    // const 
     return(
         <div>
             <h3>Filter</h3>
-            Consider the following array of strings:
+                <div>
+            Consider the following array of values:
             <br/>
             <br/>
             <pre>
-            const ewq = [{ewq.map((w,i)=>`${w}${i<ewq.length-1?',':''}`)}]
+            const {ewq} = [{range.map((w,i)=>`${w}${i<range.length-1?',':''}`)}]
             </pre>
             Which of the code snippets below would generate the following output? Select all that apply.
             <ul>
                 {
-                    ewq.filter(dsa => dsa > 50).map(rew =>
+                    range.filter(dsa => dsa > fifty).map(rew =>
                         <li>{rew}</li>
                     )
                 }
@@ -26,8 +37,8 @@ const Filter = () => {
                 {`
 <ul>
     {
-        ewq.filter(dsa => dsa > 50).map(rew =>
-            <li>{rew}</li>
+        ${ewq}.filter(${dsa} => ${dsa} > ${fifty}).map(${rew} =>
+            <li>{${rew}}</li>
         )
     }
 </ul>`}
@@ -38,14 +49,14 @@ const Filter = () => {
                 {`
 <ul>
     {
-        ewq.filter(
-            function(dsa){
-                return dsa > 50
+        ${ewq}.filter(
+            function(${dsa}){
+                return ${dsa} > ${fifty}
             })
             .map(
-            function(rew) {
+            function(${rew}) {
                 return(
-                    <li>{rew}</li>
+                    <li>{${rew}}</li>
                 )
             })
     }
@@ -57,8 +68,8 @@ const Filter = () => {
                 {`
 <ul>
     {
-        ewq.map(dsa => dsa > 50).filter(rew =>
-            <li>{rew}</li>
+        ${ewq}.map(${dsa} => ${dsa} > ${fifty}).filter(${rew} =>
+            <li>{${rew}}</li>
         )
     }
 </ul>`}
@@ -69,13 +80,13 @@ const Filter = () => {
                 {`
 <ul>
     {
-        ewq.map(rew =>
-            <li>{rew}</li>
-        ).filter(dsa => dsa > 50)
+        ${ewq}.map(${rew} =>
+            <li>{${rew}}</li>
+        ).filter(${dsa} => ${dsa} > ${fifty})
     }
 </ul>`}
             </pre>
-
+                </div>
         </div>
     )
 }

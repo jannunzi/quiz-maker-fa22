@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter, Link, Route, useParams} from "react-router-dom";
 import DatabaseDesign from "./db-design/db-design";
@@ -61,21 +60,59 @@ import {IndexingCreateCompositeIndex} from "./db-design/indexing/indexing-create
 import {TransactionsDirtyRead} from "./db-design/transactions/transactions-dirty-reads";
 import {TransactionsNonRepeatableRead} from "./db-design/transactions/transactions-non-repeatable-read";
 import ContextAnswer from "./web-dev/react/context/context-answer";
+import {ComponentA} from "./web-dev/react/context/example1/prop-drilling/functions/component-a";
+import Component1 from "./web-dev/react/context/example1/prop-drilling/classes/component-1";
+import {ComponentW} from "./web-dev/react/context/example1/redux/component-w";
+import {Notebook} from "./notebook/components/notebooks/notebook";
+import NotebookList from "./notebook/components/notebooks/notebook-list";
+
+import {Provider} from 'react-redux';
+import {combineReducers, createStore} from "redux";
+import {pagesReducer} from "./notebook/reducers/pages-reducer";
+import {notebooksReducer} from "./notebook/reducers/notebooks-reducer";
+import FillMultipleBlanksEditor from "./questions/fill-multiple-blanks-editor";
+
+const reducer = combineReducers({
+    pagesReducer, notebooksReducer
+});
+const store = createStore(reducer);
+
 
 function App() {
     return (
+        <Provider store={store}>
         <BrowserRouter>
             <div className="container-fluid">
-                <h1>Quiz Maker</h1>
+                {/*<h1>Quiz Maker</h1>*/}
+                <Route exact={true}
+                       path={[
+                           "/notebooks/:notebookId",
+                           "/notebooks/:notebookId/pages/:pageId",
+                       ]}>
+                    <Notebook/>
+                </Route>
+                <Route exact={true}
+                       path={[
+                           "/www",
+                           "/notebooks",
+                       ]}>
+                    <NotebookList/>
+                </Route>
+
                 <div className="row">
                     <div className="col-2">
                         <div>
                             <Link to="/db-design" className="list-group-item">DB</Link>
                             <Link to="/web-dev" className="list-group-item">WebDev</Link>
+                            <Link to="/fill-multiple-blanks/editor" className="list-group-item">FMB Editor</Link>
                         </div>
                     </div>
                     <div className="col-10">
 
+                        <Route path="/fill-multiple-blanks/editor">
+                            <FillMultipleBlanksEditor/>
+                        </Route>
+                        
                         <Route path="/add/:a/:b">
                             <Add/>
                         </Route>
@@ -156,6 +193,15 @@ function App() {
                         
                         
                         <>
+                            <Route path="/web-dev/react/context/example1/redux"
+                                   exact
+                                   component={ComponentW}/>
+                            <Route path="/web-dev/react/context/example1/prop-drill/classes"
+                                   exact
+                                   component={Component1}/>
+                            <Route path="/web-dev/react/context/example1/prop-drill"
+                                   exact
+                                   component={ComponentA}/>
                             <Route path="/web-dev/react/context" exact
                                    component={ContextAnswer}/>
                         </>
@@ -243,6 +289,7 @@ function App() {
                 </div>
             </div>
         </BrowserRouter>
+        </Provider>
     );
 }
 

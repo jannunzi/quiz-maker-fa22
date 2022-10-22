@@ -1,26 +1,29 @@
 import React from 'react'
+import {randomArrayOfStrings} from "../../utils/utils";
 
 const Placeholder = () => {
+        const strings = randomArrayOfStrings(10);
+        const label = strings[0];
+        const username = strings[1];
+        const domain = strings[2];
     return(
         <div>
             <h3>Placeholder</h3>
-            Consider the following label "Email" and input text input field.
-            <br/>
+                <div>
+                    Consider the following label <b>"{label}"</b> and input text input field.
             The input field is initially empty,
-            <br/>
-            but shows grayed out text saying "thomas@sowell.com"
-            <br/>
-            giving the user a hint of the input that is expected.
-            <br/>
+                    but shows grayed out text saying <b>"{username}@{domain}.com"</b> giving the user a hint of the input that is expected.
             When the user types into the text field, the hint disappears.
-            <br/>
             If the user deletes all the text, the hint appears again.
 
             <br/>
             <br/>
-            <label>Email</label>
+            <label>{label}</label>
             <br/>
-            <input placeholder="thomas@sowell.com"/>
+            {/*<input placeholder={`${username}@${domain}.com`}/>*/}
+            <div style={{color: 'gray', border: 'solid 1px black', width: '250px', padding: '4px'}}>
+                {username}@{domain}.com
+            </div>
             <br/>
             <br/>
             This behavior can be achieved with which of the following code snippets?
@@ -29,7 +32,15 @@ const Placeholder = () => {
             <pre>
                     {`
 <label>Email</label>
-<input placeholder="thomas@sowell.com"/>
+<input placeholder="${username}@${domain}.com"/>
+`}
+                </pre>
+            <hr/>
+            <input type="checkbox" checked={false}/>
+            <pre>
+                    {`
+<label>Email</label>
+<input hint="${username}@${domain}.com"/>
 `}                    
                 </pre>
             <hr/>
@@ -37,7 +48,7 @@ const Placeholder = () => {
             <pre>
                     {`
 <label>Email</label>
-<input hint="thomas@sowell.com"/>
+<input tip="${username}@${domain}.com"/>
 `}                    
                 </pre>
             <hr/>
@@ -45,17 +56,10 @@ const Placeholder = () => {
             <pre>
                     {`
 <label>Email</label>
-<input tip="thomas@sowell.com"/>
+<input value="${username}@${domain}.com"/>
 `}                    
                 </pre>
-            <hr/>
-            <input type="checkbox" checked={false}/>
-            <pre>
-                    {`
-<label>Email</label>
-<input value="thomas@sowell.com"/>
-`}                    
-                </pre>
+                </div>
         </div>
     )
 }

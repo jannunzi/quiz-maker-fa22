@@ -1,24 +1,31 @@
 import React from 'react'
+import {randomArrayOfStrings} from "../../utils/utils";
 
 const Title = () => {
+    const strings = randomArrayOfStrings(10);
+    const label = strings[0];
+    const tooltip = strings[1];
     return(
         <div>
             <h3>Title Tooltip</h3>
-            Consider the following label "Email" and input text input field.
-            <br/>
+            <div>
+            Consider the following label <b>"{label}"</b> and input text input field.
             The input field is initially empty.
-            <br/>
-            When the user hovers over the input field, a small text appears "Please enter your email"
-                <br/>
+            When the user hovers over the input field, a small text appears <b>"{tooltip}"</b>
                 near the input field with a hint of the input that is expected.
-            <br/>
             When the user hovers away, the hint disappears.
 
             <br/>
             <br/>
-            <label>Email</label>
+            <label>{label}</label>
             <br/>
-            <input title="Please enter your email"/>
+            {/*<input title="Please enter your email"/>*/}
+                <div style={{color: 'white', border: 'solid 1px black', width: '200px', height: '25px', padding: '4px'}}>
+                    hello
+                </div>
+                <span style={{backgroundColor: 'gray', color: 'white', width: '100px', position: "relative", left: '90px', bottom: '10px', padding: '3px'}}>
+                    {tooltip}
+                </span>
             <br/>
             <br/>
             This behavior can be achieved with which of the following code snippets?
@@ -54,6 +61,7 @@ const Title = () => {
 <input placeholder="Please enter your email"/>
 `}                    
                 </pre>
+            </div>
         </div>
     )
 }

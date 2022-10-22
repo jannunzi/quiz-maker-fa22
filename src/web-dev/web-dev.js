@@ -1,8 +1,8 @@
 import React from 'react'
-import {Link} from "react-router-dom";
+import {Link, Route} from "react-router-dom";
 import Map1 from "./es6/map/map1";
 import Filter from "./es6/filter/filter";
-import Labels from "./html/labels";
+import LabelsForInput from "./html/labels-for-input";
 import LabelsAndRadios from "./html/labels-and-radios";
 import Placeholder from "./html/placeholder";
 import Title from "./html/title";
@@ -18,6 +18,22 @@ const WebDevelopment = () => {
       <h2>Web Development</h2>
         <h3>React</h3>
         <div>
+            <Nav1/>
+
+            <LabelsForInput/>
+
+            <Link to="/web-dev/react/context/example1/redux"
+                  className="list-group-item">
+                Redux
+            </Link>
+            <Link to="/web-dev/react/context/example1/prop-drill/classes"
+                  className="list-group-item">
+                Property Drilling Class Components
+            </Link>
+            <Link to="/web-dev/react/context/example1/prop-drill"
+                  className="list-group-item">
+                Property Drilling Functional Components
+            </Link>
             <Link to="/web-dev/react/context" className="list-group-item">
                 React Context
             </Link>
@@ -66,7 +82,6 @@ const WebDevelopment = () => {
             </Link>
         </div>
 
-        <Nav1/>
         <RoutingNavigation/>
 
         <ColorAndBgColor/>
@@ -80,9 +95,7 @@ const WebDevelopment = () => {
         <Placeholder/>
 
         <LabelsAndRadios/>
-
-        <Labels/>
-
+        
         <Filter/>
         <h3>Map</h3>
         <Map1/>

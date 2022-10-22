@@ -2,19 +2,22 @@ import React from 'react'
 import {randomArrayOfStrings} from "../../../utils/utils";
 
 const Map1 = () => {
-    const ewq = randomArrayOfStrings(2, 5)
+    const range = randomArrayOfStrings(2, 5);
+    const strings = randomArrayOfStrings(3);
+        const ewq = strings[0];
+        const rew = strings[1];
     return(
         <div>
             Consider the following array of strings:
             <br/>
             <br/>
             <pre>
-            const ewq = [{ewq.map((w,i)=>`'${w}'${i<ewq.length-1?',':''}`)}]
+            const {ewq} = [{range.map((w,i)=>`'${w}'${i<range.length-1?',':''}`)}]
             </pre>
             Which of the code snippets below would generate the following output? Select all that apply.
             <ul>
                 {
-                    ewq.map(rew =>
+                    range.map(rew =>
                         <li>{rew}</li>
                     )
                 }
@@ -24,7 +27,7 @@ const Map1 = () => {
             <pre>{`
 <ul>
 {
-    ewq.map(rew => <li>{rew}</li>)
+    ${ewq}.map(${rew} => <li>{${rew}}</li>)
 }
 </ul>`}
             </pre>
@@ -33,8 +36,8 @@ const Map1 = () => {
             <pre>{`
 <ul>
 {
-    ewq.map(rew => {
-            return <li>{rew}</li>
+    ${ewq}.map(${rew} => {
+            return <li>{${rew}}</li>
         }
     )
 }
@@ -45,8 +48,8 @@ const Map1 = () => {
             <pre>{`
 <ul>
 {
-    ewq.map(function(rew) =>
-        <li>{rew}</li>
+    ${ewq}.map(function(${rew}) =>
+        <li>{${rew}}</li>
     )
 }
 </ul>`}
@@ -56,8 +59,8 @@ const Map1 = () => {
             <pre>{`
 <ul>
 {
-    ewq.map(rew =>
-        return <li>{rew}</li>
+    ${ewq}.map(${rew} =>
+        return <li>{${rew}}</li>
     )
 }
 </ul>`}

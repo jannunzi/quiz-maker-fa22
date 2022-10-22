@@ -1,3 +1,6 @@
+import JsxParser from "react-jsx-parser";
+import React from "react";
+
 export const groupByCount =
   ({
     tableA, tableB,
@@ -133,7 +136,6 @@ export const randomData =
   return tableData
 }
 
-
 export const randomIntArray = (size=5, range=100, offset=10) => {
     const integers = [];
     let count = 0;
@@ -210,6 +212,13 @@ export const randomSet = (count, array, capitalized = false) => {
     if(!array) {
         array = allArrays
     }
+    if(!count) {
+        if(!array) {
+            count = array.length;
+        } else {
+            count = 20
+        }
+    }
     let c = 0;
     let s = [];
     while (c < count && c < array.length) {
@@ -238,6 +247,21 @@ export const randomArrayElement = (array) => {
     }
     const index = randomInt(array.length)
     return array[index]
+}
+
+export const shuffleArray = (array) => {
+    let currentIndex = array.length, randomIndex;
+
+    while (currentIndex != 0) {
+
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        [array[currentIndex], array[randomIndex]] = [
+            array[randomIndex], array[currentIndex]];
+    }
+
+    return array;
 }
 
 export const work = [
@@ -274,19 +298,84 @@ export const destinations = [
 ]
 
 export const fruits = [
-    "banana",
-    "orange",
-    "grape",
-    "mango",
-    "pineapple",
     "apple",
-    "carrot",
     "apricots",
     "avocado",
-    "strawberry",
+    "banana",
     "blackberries",
-    "blueberries"
+    "blueberries",
+    "carrot",
+    "cherry",
+    "coconut",
+    "cranberry",
+    "elderberry",
+    "fig",
+    "grape",
+    "guava",
+    "kiwi",
+    "lemon",
+    "lime",
+    "mango",
+    "melon",
+    "orange",
+    "papaya",
+    "peach",
+    "pear",
+    "pineapple",
+    "pumpkin",
+    "raspberry",
+    "strawberry",
+    "watermelon",
 ];
+
+export const vegetables = [
+    "arugula",
+    "artichoke",
+    "asparagus",
+    "basil",
+    "broccoli",
+    "carrot",
+    "cabbage",
+    "cauliflower",
+    "celery",
+    "cucumber",
+    "garlic",
+    "kale",
+    "lettuce",
+    "mushrooms",
+    "onion",
+    "oregano",
+    "parsley",
+    "pepper",
+    "potato",
+    "radish",
+    "spinach",
+    "tomato",
+    "turnip",
+    "zucchini",
+]
+
+export const images = Array(20).fill(0).map((_, i) =>
+    `https://picsum.photos/200?${i}`
+)
+
+export const theImage = <JsxParser
+    jsx={`<img src="https://picsum.photos/200"/>`}
+/>;
+
+export const randomImage = (width, height) =>
+    <JsxParser
+        jsx={`<img src="https://picsum.photos/${width}/${height}?${(new Date()).getTime()}"/>`}
+/>;
+
+// export const textInput = <JsxParser jsx={`<input type="text"/>`}/>
+export const textInput = (size=10, v="some name") =>
+    <JsxParser
+        jsx={`<input type="text" size="${size}"/>${v}`}/>;
+export const smallTextInput = <input type="text" size={3}/>;
+export const textArea = <textarea></textarea>;
+export const radioBtn = () => <JsxParser jsx={`<input type="radio"/>`}/>
+export const heading = (size) => <JsxParser jsx={`<h1>The heading</h1>`}/>
 
 export const education = [
     "tuition",
@@ -319,6 +408,15 @@ export const jsDataTypes = [
     "Number",
     "Date"
 ]
+
+export const colors = [
+    "yellow",
+    "red",
+    "blue",
+    "green",
+    "white",
+    "black",
+];
 
 export const arrays = [
     fruits,

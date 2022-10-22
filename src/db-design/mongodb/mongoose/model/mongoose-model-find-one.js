@@ -1,5 +1,6 @@
 import React from 'react'
 import {randomSet, jsDataTypes} from "../../../../utils/utils";
+import FillMultipleBlanks from "../../../../questions/fill-multiple-blanks";
 
 export const MongooseModelFindOne = () => {
     const id = randomSet(20, null, false);
@@ -53,6 +54,7 @@ export const MongooseModelFindOne = () => {
                 }
                 </ol>
             </div>
+            <FillMultipleBlanks/>
         </div>
     )
 }

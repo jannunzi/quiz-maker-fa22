@@ -1,19 +1,28 @@
 import React from 'react'
+import {randomArrayOfStrings} from "../../utils/utils";
 
 const Value = () => {
+    const strings = randomArrayOfStrings(5);
+    const label = strings[0];
+    const username = strings[1];
+    const domain = strings[2];
     return(
         <div>
             <h3>Input field Value</h3>
-            Consider the following label "Email" and input text input field.
+            <div>
+            Consider the following label "{label}" and input text input field.
             <br/>
-            The input field initially displays the text "thomas@sowell".
+            The input field initially displays the text "{username}@{domain}".
             <br/>
             The user can edit the text by clicking into the field and typing on their keyboard.
             <br/>
             <br/>
-            <label>Email</label>
+            <label>{label}</label>
             <br/>
-            <input value="thomas@sowell"/>
+            {/*<input value={`${username}@${domain}`}/>*/}
+            <div style={{border: 'solid 1px black', width: '200px', padding: '4px'}}>
+                {username}@{domain}
+            </div>
             <br/>
             <br/>
             This behavior can be achieved with which of the following code snippets?
@@ -21,34 +30,35 @@ const Value = () => {
             <input type="radio" checked={true}/>
             <pre>
                     {`
-<label>Email</label>
-<input value="thomas@sowell"/>
+<label>${label}</label>
+<input value="${username}@${domain}"/>
 `}                    
                 </pre>
             <hr/>
             <input type="radio" checked={false}/>
             <pre>
                     {`
-<label>Email</label>
-<input data="thomas@sowell"/>
+<label>${label}</label>
+<input data="${username}@${domain}"/>
 `}                    
                 </pre>
             <hr/>
             <input type="radio" checked={false}/>
             <pre>
                     {`
-<label>Email</label>
-<input email="thomas@sowell"/>
+<label>${label}</label>
+<input email="${username}@${domain}"/>
 `}                    
                 </pre>
             <hr/>
             <input type="radio" checked={false}/>
             <pre>
                     {`
-<label>Email</label>
-<input placeholder="thomas@sowell"/>
+<label>${label}</label>
+<input placeholder="${username}@${domain}"/>
 `}                    
                 </pre>
+            </div>
         </div>
     )
 }

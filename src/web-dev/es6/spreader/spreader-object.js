@@ -7,6 +7,7 @@ const SpreaderObject = () => {
     return(
         <div>
             <h2>Spreader Object</h2>
+            <div>
             <Question
                 obj1={strings[0]}
                 obj2={strings[1]}
@@ -35,6 +36,7 @@ const SpreaderObject = () => {
                 h={strings[10]}
                 i={strings[11]}
             />
+            </div>
         </div>
     )
 }
@@ -56,7 +58,7 @@ const Question = (
     }) => {
     return(
         <div>
-            <h3>Question</h3>
+            {/*<h3>Question</h3>*/}
             <p>
                 Consider the following code snippet:
             </p>
@@ -110,19 +112,19 @@ const Answer = (
 
     return(
         <div>
-            What does <code>console.log({obj1}.{a})</code> print: [ANSWER_{o1.a}]
+            What does <code>console.log({obj1}.{a})</code> print? [ANSWER_{o1.a}]
             <br/>
-            What does <code>console.log({obj2}.{c})</code> print: [ANSWER_{o2.c}]
+            What does <code>console.log({obj2}.{c})</code> print? [ANSWER_{o2.c}]
             <br/>
-            What does <code>console.log({obj1}.{f})</code> print: [ANSWER_{o1.f}]
+            What does <code>console.log({obj1}.{f})</code> print? [ANSWER_{o1.f}]
             <br/>
-            <br/>
-            <h2>Answer</h2>
-            <pre>{JSON.stringify(o1)}</pre>
-            <pre>{JSON.stringify(o2)}</pre>
-            <pre>console.log(obj1.a) = {o1.a}</pre>
-            <pre>console.log(obj2.c) = {o2.c}</pre>
-            <pre>console.log(obj1.f) = {o1.f}</pre>
+            {/*<br/>*/}
+            {/*<h2>Answer</h2>*/}
+            {/*<pre>{JSON.stringify(o1)}</pre>*/}
+            {/*<pre>{JSON.stringify(o2)}</pre>*/}
+            {/*<pre>console.log(obj1.a) = {o1.a}</pre>*/}
+            {/*<pre>console.log(obj2.c) = {o2.c}</pre>*/}
+            {/*<pre>console.log(obj1.f) = {o1.f}</pre>*/}
 
         </div>
     )
